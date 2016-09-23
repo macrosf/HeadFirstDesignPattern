@@ -1,7 +1,10 @@
 package headfirst.proxy.gumballmonitor;
 
 public class SoldOutState implements State {
-    GumballMachine gumballMachine;
+
+	private static final long serialVersionUID = -1464902267852493544L;
+	
+	GumballMachine gumballMachine;
  
     public SoldOutState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

@@ -1,9 +1,9 @@
-package headfirst.proxy.virtualproxy;
+package headfirst.proxy.virtualproxywithstate;
 
 import java.awt.*;
 import javax.swing.*;
 
-class ImageComponent extends JComponent {
+public class ImageComponent extends JComponent {
 
 	private static final long serialVersionUID = -842221943124881051L;
 	private Icon icon;
