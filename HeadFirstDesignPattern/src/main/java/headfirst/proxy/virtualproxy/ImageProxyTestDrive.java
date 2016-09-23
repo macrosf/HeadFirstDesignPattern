@@ -41,6 +41,7 @@ public class ImageProxyTestDrive {
         frame.setJMenuBar(menuBar);
 
 		for(Enumeration<String> e = cds.keys(); e.hasMoreElements();) {
+
 			String name = (String)e.nextElement();
         	JMenuItem menuItem = new JMenuItem(name);
         	menu.add(menuItem); 

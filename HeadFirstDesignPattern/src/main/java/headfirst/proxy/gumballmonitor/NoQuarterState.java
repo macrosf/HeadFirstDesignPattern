@@ -3,7 +3,7 @@ package headfirst.proxy.gumballmonitor;
 public class NoQuarterState implements State {
 
 	private static final long serialVersionUID = -6436861344254595239L;
-	
+
 	GumballMachine gumballMachine;
  
     public NoQuarterState(GumballMachine gumballMachine) {
