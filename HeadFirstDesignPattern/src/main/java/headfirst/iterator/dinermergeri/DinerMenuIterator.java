@@ -2,7 +2,7 @@ package headfirst.iterator.dinermergeri;
  
 import java.util.Iterator;
   
-public class DinerMenuIterator implements Iterator {
+public class DinerMenuIterator implements Iterator<MenuItem> {
 	MenuItem[] list;
 	int position = 0;
  
@@ -10,7 +10,7 @@ public class DinerMenuIterator implements Iterator {
 		this.list = list;
 	}
  
-	public Object next() {
+	public MenuItem next() {
 		MenuItem menuItem = list[position];
 		position = position + 1;
 		return menuItem;

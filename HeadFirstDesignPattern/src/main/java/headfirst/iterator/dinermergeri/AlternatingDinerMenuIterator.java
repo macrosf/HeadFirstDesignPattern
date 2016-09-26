@@ -3,16 +3,16 @@ package headfirst.iterator.dinermergeri;
 import java.util.Iterator;
 import java.util.Calendar;
 
-public class AlternatingDinerMenuIterator implements Iterator {
+public class AlternatingDinerMenuIterator implements Iterator<MenuItem> {
 	MenuItem[] items;
 	int position;
 
 	public AlternatingDinerMenuIterator(MenuItem[] items) {
 		this.items = items;
 		Calendar rightNow = Calendar.getInstance();
-		position = rightNow.DAY_OF_WEEK % 2;
+		position = rightNow.get(Calendar.DAY_OF_WEEK) % 2;
 	}
-	public Object next() {
+	public MenuItem next() {
 		MenuItem menuItem = items[position];
 		position = position + 2;
 		return menuItem;

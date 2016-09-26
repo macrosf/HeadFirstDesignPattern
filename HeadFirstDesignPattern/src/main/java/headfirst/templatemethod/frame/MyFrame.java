@@ -22,6 +22,7 @@ public class MyFrame extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		MyFrame myFrame = new MyFrame("Head First Design Patterns");
+		//MyFrame myFrame = new MyFrame("Head First Design Patterns");
+		new MyFrame("Head First Design Patterns");
 	}
 }

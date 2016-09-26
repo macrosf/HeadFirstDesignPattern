@@ -1,6 +1,6 @@
 package headfirst.templatemethod.sort;
 
-public class Duck implements Comparable {
+public class Duck implements Comparable<Duck> {
 	String name;
 	int weight;
   
@@ -15,7 +15,7 @@ public class Duck implements Comparable {
  
  
   
-	public int compareTo(Object object) {
+	public int compareTo(Duck object) {
  
 		Duck otherDuck = (Duck)object;
   

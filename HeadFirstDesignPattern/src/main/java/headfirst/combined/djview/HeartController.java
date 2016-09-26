@@ -22,6 +22,18 @@ public class HeartController implements ControllerInterface {
 	public void decreaseBPM() {}
   
  	public void setBPM(int bpm) {}
+
+	public boolean isBPMButtonEnabled() {
+		return false;
+	}
+
+	public boolean isIncreaseBPMButtonEnabled() {
+		return false;
+	}
+
+	public boolean isDecreaseBPMButtonEnabled() {
+		return false;
+	}
 }
 
 

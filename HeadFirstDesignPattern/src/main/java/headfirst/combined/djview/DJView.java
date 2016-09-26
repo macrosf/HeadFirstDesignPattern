@@ -94,7 +94,11 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver {
         setBPMButton.addActionListener(this);
         increaseBPMButton.addActionListener(this);
         decreaseBPMButton.addActionListener(this);
-
+        
+        setBPMButton.setEnabled(controller.isBPMButtonEnabled());
+        increaseBPMButton.setEnabled(controller.isIncreaseBPMButtonEnabled());
+        decreaseBPMButton.setEnabled(controller.isDecreaseBPMButtonEnabled());
+        
         JPanel buttonPanel = new JPanel(new GridLayout(1, 2));
 
 		buttonPanel.add(decreaseBPMButton);

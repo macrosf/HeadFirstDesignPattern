@@ -62,7 +62,7 @@ public class Waitress {
 		}
 	}
 
-	private boolean isVegetarian(String name, Iterator iterator) {
+	private boolean isVegetarian(String name, Iterator<MenuItem> iterator) {
 		while (iterator.hasNext()) {
 			MenuItem menuItem = (MenuItem)iterator.next();
 			if (menuItem.getName().equals(name)) {

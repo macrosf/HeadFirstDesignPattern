@@ -39,4 +39,16 @@ public class BeatController implements ControllerInterface {
  	public void setBPM(int bpm) {
 		model.setBPM(bpm);
 	}
+
+	public boolean isBPMButtonEnabled() {
+		return true;
+	}
+
+	public boolean isIncreaseBPMButtonEnabled() {
+		return true;
+	}
+
+	public boolean isDecreaseBPMButtonEnabled() {
+		return true;
+	}
 }
